@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Dice {
+public class Hello {
     
     public static void main (String[] args) {
 

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Hello {
+public class Bank {
     
     public static void main (String[] args) { //intro access
       
