@@ -1,6 +1,8 @@
+
+
 import java.util.Random;
 
-public class Hello {
+public class myFile {
     
     public static void main (String[] args) {
 
@@ -37,3 +39,4 @@ public class Hello {
     }
 }
 }
+
