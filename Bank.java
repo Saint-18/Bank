@@ -38,15 +38,26 @@ public class Bank {
 
         if(y == 1){            //deposit code
 
-         Withdrawl Wario = new Withdrawl();
+        
          
-         String[] Luigi;
+         
+         
+         String[] alpha = new String[1];
+          
+         deposit.main(alpha);
 
 
 
         }else if(y == 2){          //withdrawl code
             
 
+          
+         
+          String[] alpha = new String[1];
+          
+          Withdrawl.main(alpha);
+ 
+ 
 
 
         }

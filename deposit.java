@@ -5,13 +5,12 @@ public class deposit {
 
     public static void main (String[] args){
 
+        try {
        int Account = 1000;
 
         Scanner inw = new Scanner(System.in);
 
         System.out.println("Enter your Deposit amount: ");
-
-        
   
         String deposit = inw.nextLine();
   
@@ -22,6 +21,11 @@ public class deposit {
          System.out.print("Your new account balence is: " + Account );
 
         inw.close();
+        }
+        catch (Exception e) {
+
+            System.out.println("Error: " + e.getMessage() );
+        }
     }
     
 }
