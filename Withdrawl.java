@@ -2,24 +2,33 @@ import java.util.*;
 
 public class Withdrawl {
 
-    public static void main (String[] args){
- 
-     int Account = 1000;
+    public static void main (final String[] args) {
 
-    Scanner ine = new Scanner(System.in);
+        int Account = 1000;
 
-    System.out.println("Enter your Withdrawl amount: ");
+        final Scanner ine = new Scanner(System.in);
 
-    String Withdrawl = ine.nextLine();
+        System.out.println("Enter your Withdrawl amount: ");
 
-    int v = Integer.parseInt(Withdrawl);
-        if ( v > 0) {
+        final String Withdrawl = ine.nextLine();
 
-    Account = Account - v;
+        final int v = Integer.parseInt(Withdrawl);
+        
+        if (v > Account){
+            System.out.print("Withdrawl cannot be more than account balence");
+        }else{
+            Account = Account - v;
 
-    System.out.print("Your new account balence is: " + Account );
+            System.out.print("Your new account balence is: " + Account );
         }
 
-    ine.close();
+    
+
+        ine.close();
     }
 }
+
+
+
+
+ 

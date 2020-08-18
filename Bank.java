@@ -46,13 +46,14 @@ public class Bank {
           
          deposit.main(alpha);
 
+        
+
 
 
         }else if(y == 2){          //withdrawl code
             
-
-          
          
+                
           String[] alpha = new String[1];
           
           Withdrawl.main(alpha);
