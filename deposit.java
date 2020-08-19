@@ -4,15 +4,18 @@ public class deposit {
 
 
     public static void main (String[] args){
+    }
+
+    public void depositMoney (Scanner myScanner)    {
 
         try {
        int Account = 1000;
 
-        Scanner inw = new Scanner(System.in);
+        //Scanner inw = new Scanner(System.in);
 
         System.out.println("Enter your Deposit amount: ");
   
-        String deposit = inw.nextLine();
+        String deposit = myScanner.nextLine();
   
         int z = Integer.parseInt(deposit);
 
@@ -20,7 +23,7 @@ public class deposit {
 
          System.out.print("Your new account balence is: " + Account );
 
-        inw.close();
+         myScanner.close();
         }
         catch (Exception e) {
 
