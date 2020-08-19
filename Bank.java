@@ -1,4 +1,6 @@
 import java.util.*;
+import java.io.File;
+import java.io.IOException;
 
 public class Bank {
     
@@ -20,12 +22,16 @@ public class Bank {
       if(x == 1107){ //pin number                      //post access code
         System.out.println("Your account has been accessed");
 
-        System.out.println("For Deposit press 1");
+        System.out.println(" ");
 
-        System.out.println("For Withdrawl press 2");
+        System.out.println("For Deposit press 1.");
+      
+        System.out.println("For Withdrawl press 2.");
+
+        System.out.println("If finished press 3.");
 
         
-        System.out.println(": ");
+        System.out.println(":   ");
 
         
         String num = in.nextLine();
@@ -68,7 +74,28 @@ public class Bank {
         }
                                              //post interaction code
 
-        //Account;
+        
+  
+    try {
+
+      File myObj = new File("filename.txt");
+
+      if (myObj.createNewFile()) {
+
+        System.out.println("File created: " + myObj.getName());
+      } else {
+
+        System.out.println("File already exists.");
+      }
+
+    } catch (IOException e) {
+
+      System.out.println("An error occurred.");
+      
+      e.printStackTrace();
+    
+  
+}
           
 
 
