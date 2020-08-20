@@ -25,8 +25,8 @@ public class Withdrawl {
         }
 
     
-
         myScanner.close();
+        
     }
 }
 

@@ -23,12 +23,14 @@ public class deposit {
 
          System.out.print("Your new account balence is: " + Account );
 
-         myScanner.close();
+         
         }
         catch (Exception e) {
 
             System.out.println("Error: " + e.getMessage() );
         }
+
+        myScanner.close();
     }
     
 }
