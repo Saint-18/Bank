@@ -15,15 +15,19 @@ public class Bank {
     int x = Integer.parseInt(pin);
 
 
-    if (x == 1107) { // pin number //post access code
-
+    if (x != 1107) { // pin number //post access code
+      in.close();
+      return;
+    }
       
 
       System.out.println("Your account has been accessed");
 
-      System.out.println(" ");
+      
 
-      for (int z = 0; z < 3; z++){
+      for (int z = 0; z < 3; z++) {
+
+        System.out.println("");
 
       System.out.println("For Deposit press 1.");
 
@@ -55,8 +59,6 @@ public class Bank {
 
       } else if (y == 3){
 
-        
-
         in.close(); 
 
         return;
@@ -73,4 +75,3 @@ public class Bank {
 
   }
 
-}

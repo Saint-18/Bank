@@ -30,7 +30,7 @@ public class deposit {
             System.out.println("Error: " + e.getMessage() );
         }
 
-        myScanner.close();
+        
     }
     
 }
