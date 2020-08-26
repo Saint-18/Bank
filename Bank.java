@@ -23,6 +23,10 @@ public class Bank {
 
       System.out.println("Your account has been accessed");
 
+      BankBalance myBankBalance = new  BankBalance();
+
+         myBankBalance.CreateFile();
+
       
 
       for (int z = 0; z < 3; z++) {

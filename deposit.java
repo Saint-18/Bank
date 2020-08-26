@@ -23,7 +23,7 @@ public class deposit {
 
          BankBalance myBankBalance = new  BankBalance();
 
-         myBankBalance.CreateFile();
+            myBankBalance.Writefile();
 
          System.out.print("Your new account balence is: " + Account );
 

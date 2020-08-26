@@ -21,6 +21,11 @@ public class Withdrawl {
         }else{
             Account = Account - v;
 
+            BankBalance myBankBalance = new  BankBalance();
+
+            myBankBalance.Writefile();
+
+
             System.out.print("Your new account balence is: " + Account );
         }
 
