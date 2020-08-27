@@ -2,14 +2,13 @@ import java.util.*;
 
 public class Withdrawl {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
     }
-    public void WithdrawlMoney (Scanner myScanner)    {
 
-        Account myAccount = new Account();
+    public void WithdrawlMoney(Scanner myScanner) {
 
-        int Account = myAccount.getAccount();
-        
+        BankBalance bb = new BankBalance();
+        int Account = bb.Readfile();
 
         System.out.println("Enter your Withdrawl amount: ");
 
@@ -17,33 +16,22 @@ public class Withdrawl {
 
         int v = Integer.parseInt(Withdrawl);
 
-        
-        if (v > Account){
+        if (v > Account) {
 
             System.out.print("Withdrawl cannot be more than account balence");
 
-        }else{
+        } else {
 
             Account = Account - v;
 
-
-            BankBalance myBankBalance = new  BankBalance();
+            BankBalance myBankBalance = new BankBalance();
 
             myBankBalance.Writefile(Account);
 
+            System.out.print("Your new account balence is: ");
 
-            System.out.print("Your new account balence is: " );
-           
             myBankBalance.Readfile();
         }
 
-    
-       
-        
     }
 }
-
-
-
-
- 

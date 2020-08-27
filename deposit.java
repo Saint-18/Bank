@@ -2,51 +2,32 @@ import java.util.*;
 
 public class deposit {
 
-
-    public static void main (String[] args){
+    public static void main(String[] args) {
     }
 
-    public void depositMoney (Scanner myScanner)    {
+    public void depositMoney(Scanner myScanner) {
 
         try {
 
-            Account myAccount = new Account();
+            BankBalance bb = new BankBalance();
+            int Account = bb.Readfile();
 
-            int Account = myAccount.getAccount();
-                
+            System.out.println("Enter your Deposit amount: ");
 
-        System.out.println("Enter your Deposit amount: ");
-  
-        String deposit = myScanner.nextLine();
-  
-        int z = Integer.parseInt(deposit);
+            String deposit = myScanner.nextLine();
 
-        
-         Account = Account + z;
+            int z = Integer.parseInt(deposit);
 
-         BankBalance myBankBalance = new  BankBalance();
+            Account = Account + z;
 
-            myBankBalance.Writefile(Account);
-        
+            bb.Writefile(Account);
 
-         System.out.print("Your new account balence is: " ); 
+            System.out.print("Your new account balence is: ");
 
-
-            myBankBalance.Readfile();
-        
-
-         
-        }
-        catch (Exception e) {
-
-            System.out.println("Error: " + e.getMessage() );
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
         }
 
-        
-        
     }
-    
-      }
-    
-    
 
+}
