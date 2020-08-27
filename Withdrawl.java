@@ -23,7 +23,7 @@ public class Withdrawl {
 
             BankBalance myBankBalance = new  BankBalance();
 
-            myBankBalance.Writefile();
+            myBankBalance.Writefile(Account);
 
 
             System.out.print("Your new account balence is: " + Account );

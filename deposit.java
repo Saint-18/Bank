@@ -9,9 +9,11 @@ public class deposit {
     public void depositMoney (Scanner myScanner)    {
 
         try {
-       int Account = 1000;
 
-        //Scanner inw = new Scanner(System.in);
+            Account myAccount;
+
+            int Account = myAccount.getAccount();
+                
 
         System.out.println("Enter your Deposit amount: ");
   
@@ -19,13 +21,19 @@ public class deposit {
   
         int z = Integer.parseInt(deposit);
 
+        
          Account = Account + z;
 
          BankBalance myBankBalance = new  BankBalance();
 
-            myBankBalance.Writefile();
+            myBankBalance.Writefile(Account);
+        
 
-         System.out.print("Your new account balence is: " + Account );
+         System.out.print("Your new account balence is: " ); 
+
+
+            myBankBalance.Readfile();
+        
 
          
         }
@@ -35,6 +43,10 @@ public class deposit {
         }
 
         
+        
     }
     
-}
+      }
+    
+    
+

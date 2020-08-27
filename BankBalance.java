@@ -25,13 +25,16 @@ public class BankBalance{
 
   }
 
-  public void Writefile(){
+  public void Writefile(int Account){
 
 
     try {
+
+        
+
       FileWriter myWriter = new FileWriter("c:\\temp\\myBankBalance.txt");
 
-      myWriter.write ("balence is" + Acccount );
+      myWriter.write ( Account );
 
       myWriter.close();
 
