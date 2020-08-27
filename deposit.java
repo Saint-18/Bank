@@ -10,7 +10,7 @@ public class deposit {
 
         try {
 
-            Account myAccount;
+            Account myAccount = new Account();
 
             int Account = myAccount.getAccount();
                 

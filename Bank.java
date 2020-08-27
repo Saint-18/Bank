@@ -4,8 +4,6 @@ public class Bank {
 
   public static void main(String[] args) { // intro access
 
-    
-
     Scanner in = new Scanner(System.in);
 
     System.out.println("Enter your 4 digit pin: ");
@@ -69,7 +67,7 @@ public class Bank {
       }                                // post interaction code
 
        
-
+       
     }
       
 

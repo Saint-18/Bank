@@ -34,7 +34,7 @@ public class BankBalance{
 
       FileWriter myWriter = new FileWriter("c:\\temp\\myBankBalance.txt");
 
-      myWriter.write ( Account );
+      myWriter.write ( "myBalance: " + Account );
 
       myWriter.close();
 
